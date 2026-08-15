@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="client/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">
+          <span class="logo-box">V</span>
+          <div>
+            <strong>Velora</strong>
+            <small>STUDIO</small>
+          </div>
+        </div>
+        <nav>
+          <a href="#new">New</a>
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#account">My Account</a>
+          <a href="#orders">My Orders</a>
+          <a href="#offers">Offers</a>
+        </nav>
+
+        <div class="nav-right">
+          <div class="search-box">
+            <span>⌕</span>
+            <input id="searchInput" type="text" placeholder="Search clothes" />
+          </div>
+          <button class="cart-btn">Cart <span id="cartCount">0</span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="new">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">NEW SEASON DROP</p>
+            <h1>Own your style.</h1>
+            <p class="subtitle">
+              Premium clothing for everyday comfort, bold looks, and effortless confidence.
+            </p>
+            <div class="cta-row">
+              <a href="#shop" class="btn primary">Shop now</a>
+              <a href="#offers" class="btn secondary">View deals</a>
+            </div>
+            <div class="stats">
+              <div><strong>24k+</strong><span>happy buyers</span></div>
+              <div><strong>4.9/5</strong><span>seller rating</span></div>
+              <div><strong>2 days</strong><span>express delivery</span></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="badge badge-top">Street Edit</div>
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Fashion model" />
+            <div class="badge badge-bottom">Up to 40% off</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands container">
+        <p>Featured labels</p>
+        <div class="brand-row">
+          <span>ZARA</span>
+          <span>H&M</span>
+          <span>LEVI'S</span>
+          <span>ASOS</span>
+          <span>CALVIN KLEIN</span>
+        </div>
+      </section>
+
+      <section class="container categories" id="collections">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">BROWSE</p>
+            <h2>Shop by style</h2>
+          </div>
+        </div>
+        <div class="category-grid">
+          <article class="category women"><div><span>Women</span><h3>Elegant basics</h3></div></article>
+          <article class="category men"><div><span>Men</span><h3>Sharp essentials</h3></div></article>
+          <article class="category acc"><div><span>Accessories</span><h3>Finish the look</h3></div></article>
+        </div>
+      </section>
+
+      <section class="container account-panel" id="account">
+        <div class="customer-card">
+          <div class="avatar">AS</div>
+          <div class="customer-info">
+            <p class="eyebrow">Customer ID</p>
+            <h2>VEL-2048</h2>
+            <p>Akash Sharma</p>
+          </div>
+        </div>
+
+        <div class="account-actions">
+          <a href="#orders" class="quick-link">My Orders</a>
+          <a href="#cart" class="quick-link">Cart</a>
+          <a href="#offers" class="quick-link">Offers</a>
+          <a href="#shop" class="quick-link">Wishlist</a>
+        </div>
+      </section>
+
+      <section class="container orders" id="orders">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">MY ACCOUNT</p>
+            <h2>My orders</h2>
+          </div>
+        </div>
+        <div id="ordersGrid" class="orders-grid"></div>
+      </section>
+
+      <section class="container gender-store">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">SHOP FOR</p>
+            <h2>Girls & boys</h2>
+          </div>
+        </div>
+
+        <div class="gender-section-grid">
+          <article class="gender-panel girls-panel">
+            <div class="panel-head">
+              <span>Girls collection</span>
+              <h3>Soft glam</h3>
+            </div>
+            <div id="girlsGrid" class="mini-product-grid"></div>
+          </article>
+
+          <article class="gender-panel boys-panel">
+            <div class="panel-head">
+              <span>Boys collection</span>
+              <h3>Street smart</h3>
+            </div>
+            <div id="boysGrid" class="mini-product-grid"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container shop" id="shop">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">FEATURED</p>
+            <h2>Popular this week</h2>
+          </div>
+          <a href="#" class="link">View all</a>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+
+      <section class="container offers" id="offers">
+        <div class="offer-box">
+          <div>
+            <p class="eyebrow">LIMITED TIME</p>
+            <h2>Seasonal sale up to 50% off.</h2>
+          </div>
+          <a href="#shop" class="btn primary">Claim offer</a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart">
+      <div class="cart-header">
+        <h3>Your bag</h3>
+        <span id="bagCount">0 items</span>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Subtotal</span>
+          <strong id="cartTotal">₹0</strong>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="container footer">
+        <div class="logo">
+          <span class="logo-box">V</span>
+          <div>
+            <strong>Velora</strong>
+            <small>STUDIO</small>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Privacy</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="client/app.js"></script>
+  </body>
+</html>

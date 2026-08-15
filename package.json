@@ -1,0 +1,25 @@
+{
+  "name": "clothing-ecommerce",
+  "version": "1.0.0",
+  "description": "Modern clothing e-commerce website",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "clothing",
+    "express",
+    "shopping"
+  ],
+  "author": "Suryansh",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
